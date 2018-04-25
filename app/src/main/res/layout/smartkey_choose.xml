@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lyPopu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/smartkey_popu_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:text="@string/STR_POPU_TITLE"
+            android:textColor="@color/COLOR_POPU_TITLE"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/smartkey_hand"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnPopuRightKey"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/smartkey_choose_right_btn_bg"
+                android:text="@string/STR_POPU_RIGHT_BTN"
+                android:textColor="@color/COLOR_POPU_BTN_COLOR"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btnPopuLeft"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/smartkey_choose_btn_left_bg"
+                android:text="@string/STR_POPU_LEFT_BTN"
+                android:textColor="@color/COLOR_POPU_BTN_COLOR"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

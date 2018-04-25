@@ -1,0 +1,252 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.zzy.smarttouch">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.hardware.camera"/>
+    <uses-permission android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+
+    <application
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:name="com.zzy.smarttouch.smartKeyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.zzy.smarttouch.MainActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.zzy.smarttouch.RegeditActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:theme="@style/Theme_Transparent_Full">
+        </activity>
+
+        <activity
+            android:name="com.zzy.smarttouch.FindActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:theme="@style/Theme_Transparent_Full">
+        </activity>
+
+        <activity
+            android:name="com.zzy.smarttouch.EntryActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name="com.zzy.smarttouch.AppList"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name="com.zzy.smarttouch.SettingPage"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name="com.zzy.sortlist.OpenAppMore"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name="com.zzy.record.RecordWin"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+        </activity>
+
+
+
+        <activity
+            android:name="com.zzy.unlock.unlockActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >>
+        </activity>
+
+        <activity
+            android:name="com.zzy.appswitch.switchActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:theme="@style/Theme_Transparent" >
+        </activity>
+
+        <activity
+            android:name="com.zxing.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <activity
+            android:name="com.zzy.privacy.CreateGestureActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name="com.zzy.privacy.ModifyGesturePasswordActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+        </activity>
+
+
+
+        <activity
+            android:name="com.zzy.privacy.UnlockGesturePasswordActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+        </activity>
+
+
+        <service android:name="com.zzy.smarttouch.notifyService"></service>
+        <receiver android:name="com.zzy.smarttouch.notifyService$notifyService_BR">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.ANY_DATA_STATE" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+                <action android:name="android.intent.action.MEDIA_REMOVED" />
+                <action android:name="android.intent.action.MEDIA_CHECKING" />
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.SERVICE_STATE" />
+            </intent-filter>
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.SIM_STATE_CHANGED" />
+            </intent-filter>
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+            <intent-filter android:priority="2147483647">
+                <action android:name="smartTouch_record_state_action"/>
+            </intent-filter>
+
+        </receiver>
+
+        <receiver android:name="com.zzy.smarttouch.MediaButtonBroadcastReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.MEDIA_BUTTON"></action>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.zzy.lock.AdminManager$AdminReceiver"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data android:name="android.app.device_admin"
+                android:resource="@xml/device_admin" />
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+
+
+        <service
+            android:name="com.zzy.top.DetectService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/detection_service_config"/>
+
+        </service>
+
+
+    </application>
+
+</manifest>

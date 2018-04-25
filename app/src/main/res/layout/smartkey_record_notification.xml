@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/smartkey_app_case" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvRecordName"
+                    style="@style/TextBaseStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="name"
+                    android:textColor="@color/COLOR_WHITE"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/tvRecordTime"
+                    style="@style/TextBaseStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="00:00"
+                    android:textColor="#ffa3a3a3"
+                    android:textSize="24dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnRecordView"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/smartkey_record_selector"
+                android:text="@string/STR_VIEW"
+                android:textColor="@android:color/white"
+                android:textSize="14dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnRecordNotify"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/smartkey_record_selector"
+                android:text="@string/STR_STOP"
+                android:textColor="@android:color/white"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

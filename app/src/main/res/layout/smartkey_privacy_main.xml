@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/lyGuide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/smartkey_gesturepassword_guide" />
+
+    <include
+        android:id="@+id/lyPrivacyList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/smartkey_privacy_setting" />
+
+    <include
+        android:id="@+id/lyUnLock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/smartkey_gesturepassword_unlock" />
+
+</FrameLayout>

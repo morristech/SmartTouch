@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/smartkey_popu_bg"
+        android:orientation="vertical" >
+
+        <GridView
+            android:id="@+id/gvSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="3" >
+        </GridView>
+
+        <LinearLayout
+            android:id="@+id/lySwitchButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnSwitchOK"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/smartkey_choose_right_btn_bg"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:text="@string/STR_OK"
+                android:textSize="@dimen/TEXT_DEFAULT_SIZE" />
+
+            <Button
+                android:id="@+id/btnSwitchCancle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/smartkey_choose_right_btn_bg"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:text="@string/STR_CANCEL"
+                android:textSize="@dimen/TEXT_DEFAULT_SIZE" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+     <item android:id="@+id/smartkey_popu_bg_drawable" android:drawable="@drawable/smartkey_popu_bg" />    
+     <item android:id="@+id/smartkey_popu_hand_drawable"   
+           android:drawable="@drawable/smartkey_hand" />
+</layer-list>

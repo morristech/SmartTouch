@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="TEXT_DEFAULT_SIZE">16dp</dimen>
+    <dimen name="activity_space_size">20dp</dimen>
+    <dimen name="temperature_text_size">160dp</dimen>
+    <dimen name="temperature_unit_size">80dp</dimen>
+    <dimen name="contact_text_size">140dp</dimen>
+    <dimen name="contact_time_size">80dp</dimen>
+    <dimen name="alarm_time_size">80dp</dimen>
+
+</resources>

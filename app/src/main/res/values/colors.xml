@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="COLOR_POPU_TITLE">#ff000000</color>
+    <color name="COLOR_POPU_BTN_COLOR">#ff000000</color>
+    <color name="COLOR_BLACK">#ff000000</color>
+    <color name="COLOR_WHITE">#ffffffff</color>
+    <color name="COLOR_GRAY">#aaa</color>
+    <color name="MAIN_BG_COLOR">#FF000000</color>
+    <color name="MAIN_TIME_TEXT_COLOR">#FFFFFFFF</color>
+    <color name="TAB_SELECT_COLOR">#FFFF794B</color>
+    <color name="COLOR_LIST_LINE">#FFDDDDDD</color>
+    <color name="gesture_background">#ff303237</color>
+    <color name="color_hei_8">#00000000</color>
+    <drawable name="trans">@color/color_hei_8</drawable>
+</resources>

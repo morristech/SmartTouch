@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+     <item android:id="@+id/smartkey_popu_btnleft_bg" android:drawable="@drawable/smartkey_choose_left_btn_default" />    
+     <item android:id="@+id/smartkey_popu_btnleft_top" android:drawable="@drawable/smarkkey_pop_left_btn_on" />
+</layer-list>
